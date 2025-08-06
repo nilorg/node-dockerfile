@@ -5,10 +5,12 @@ RUN apk --no-cache add -U tzdata
 ENV TZ=Asia/Shanghai
 
 RUN npm version
-RUN npm install -g pnpm@latest-10
 
+RUN npm install -g corepack@latest
+
+RUN corepack enable pnpm
 RUN pnpm version
-RUN pnpm install yarn tyarn -g
 
-RUN yarn --version
-RUN tyarn --version
+RUN corepack enable yarn
+RUN yarn version
+
