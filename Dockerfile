@@ -12,5 +12,5 @@ RUN corepack enable pnpm
 RUN pnpm version
 
 RUN corepack enable yarn
-RUN yarn version
+RUN yarn --version
 
