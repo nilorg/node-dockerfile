@@ -21,7 +21,7 @@ env:
   REGISTRY: docker.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: nilorg/node
-  PLATFORMS: linux/amd64,linux/arm64/v8,linux/s390x
+  PLATFORMS: linux/amd64,linux/arm64/v8
 
 
 jobs:
