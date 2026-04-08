@@ -1,4 +1,4 @@
-FROM node:24.14-alpine
+FROM node:24.14.1-alpine
 RUN set -eux; \
 	sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories; \
 	apk --no-cache add ca-certificates tzdata || \
