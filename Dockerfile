@@ -5,12 +5,12 @@ RUN set -eux; \
 	(sed -i 's/mirrors.aliyun.com/dl-cdn.alpinelinux.org/g' /etc/apk/repositories && apk --no-cache add ca-certificates tzdata)
 ENV TZ=Asia/Shanghai
 
-RUN npm version
+RUN npm --version
 
 RUN npm install -g corepack@latest
 
 RUN corepack enable pnpm
-RUN pnpm version
+RUN pnpm --version
 
 RUN corepack enable yarn
 RUN yarn --version
